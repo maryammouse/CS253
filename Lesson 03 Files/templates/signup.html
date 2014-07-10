@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<title>Signup</title>
+<body>
+
+<head>Signup</head>
+
+<form method="post">
+    <label>
+    Username
+    </label>
+    <input type="text" name="username" value="%(user_input)s"><font color="red">
+    %(user_error)s</font>
+    <br>
+    <label>
+    Password
+    </label>
+    <input type="text" name="password"><font color="red">
+    %(pass_error)s</font>
+    <br>
+    <label>
+    Verify Password
+    </label>
+    <input type="text" name="verify"><font color="red">
+    %(verify_error)s</font>
+    <br>
+    <label>
+    Email (optional)
+    </label>
+    <input type="text" name="email" value="%(email_input)s"><font color="red">
+    %(email_error)s</font>
+    <br>
+    <input type="submit">
+</form>
+
+</body>
+</html>

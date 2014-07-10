@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+<head><title>blog</title></head>
+
+<body>
+
+{% for blog in blogs %}
+    <div class="blog">
+        <div class="blog-title">{{blog.title}}</div>
+        <div class="blog-date">{{blog.created}}</div>
+        <pre class="blog-content">{{blog.blog}}</pre>
+    </div>
+{% endfor %}
+
+</body>
+

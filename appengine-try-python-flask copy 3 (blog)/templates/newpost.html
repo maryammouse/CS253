@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<style>
+
+label {font: 15pt Geneva;}
+
+textarea {width: 400px; height: 300px;}
+
+h1 {font: 20pt Geneva; background: #ccc; color: purple;}
+
+a {color: pink; font: 15pt Geneva;}
+.box {margin-left: 10%;}
+</style>
+
+<head><title>blog - newpost</title></head>
+
+<html>
+<body>
+
+<h1>HAI</h1>
+<a href="/blog">Back to Blog</a>
+<div class="box">
+<form method="post">
+    <label><div>subject</div>
+        <input style="text" name="subject" value="{{subject}}">
+    </label>
+
+    <label><div>content</div>
+        <textarea name="content" value="{{content}}">{{content}}</textarea>
+    </label>
+    <div class="error" style="color: red;">{{error}}</div>
+    <input type="submit">
+
+</form>
+</div>
+
+
+</body>
+</html>
